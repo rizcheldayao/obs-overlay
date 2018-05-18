@@ -1,0 +1,25 @@
+{
+  "name": "fs-obs-overlay",
+  "version": "0.1.0",
+  "description": "A Very Minimilistic Overlay System for use with OBS. Uses Express, WebSockets",
+  "homepage": "http://www.failedsleep.com",
+  "main": "overlay.js",
+  "config": {
+    "port": "2017"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "ws": "^2.2.3"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3"
+  },
+  "scripts": {
+    "babel": "babel src/js/ -d graphics/js/ -w",
+    "develop": "webpack --mode development --watch",
+    "build": "webpack --mode production",
+    "webpack": "webpack-cli ./src/js/index.js ./public/dist/main.js"
+  }
+}

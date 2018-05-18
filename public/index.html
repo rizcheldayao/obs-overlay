@@ -1,0 +1,21 @@
+<HTML>
+<head>
+    <link href="style/index.css" rel="stylesheet"/>
+    <script type="text/javascript" src="dist/bundle.js"></script>
+</head>
+<body>
+  <div id="container" class="stage">
+      <h2 class="timer">1:30</h2>
+      <h2 class="rundown">RUNDOWN</h2>
+  </div>
+  <div class="bottom-container" style="display: flex; width: 100%">
+      <div id="description">
+      </div>
+  </div>
+</body>
+<script>
+  var host = window.document.location.host.replace(/:.*/,'')
+    , ws = new WebSocket('ws://'+host+':2017')
+    ;
+</script>
+</HTML>
